@@ -1,0 +1,6 @@
+framework module TagWorks {
+  umbrella header "TagWorks-umbrella.h"
+
+  export *
+  module * { export * }
+}

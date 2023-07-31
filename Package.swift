@@ -21,8 +21,6 @@ let package = Package(
         .target(
             name: "TagWorks",
             dependencies: []),
-        .testTarget(
-            name: "TagWorksTests",
-            dependencies: ["TagWorks"]),
-    ]
+    ],
+    swiftLanguageVersions: [.v5]
 )

@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'TagWorks_Example' do
+  pod 'TagWorks', :path => '../'
+
+  target 'TagWorks_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

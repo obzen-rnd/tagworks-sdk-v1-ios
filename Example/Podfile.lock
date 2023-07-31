@@ -1,0 +1,16 @@
+PODS:
+  - TagWorks (0.1.0)
+
+DEPENDENCIES:
+  - TagWorks (from `../`)
+
+EXTERNAL SOURCES:
+  TagWorks:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  TagWorks: 3d51f12925e6e8319ed61904ae0a8562c1d3a2b5
+
+PODFILE CHECKSUM: 31c520484e1fe7d1a41a8a73179aa6d6d5a6a649
+
+COCOAPODS: 1.11.3
