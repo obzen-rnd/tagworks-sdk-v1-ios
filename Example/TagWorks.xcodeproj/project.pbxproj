@@ -14,6 +14,7 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		980A9E212A78A33600E1EDA7 /* Tracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980A9E202A78A33600E1EDA7 /* Tracker.swift */; };
 		B84FBB52D1CA8A2622F34A87 /* Pods_TagWorks_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E1E3C75694110D2EE2FC21C /* Pods_TagWorks_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +43,7 @@
 		7CEC54083C291A5FFA32F474 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		7E1E3C75694110D2EE2FC21C /* Pods_TagWorks_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TagWorks_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		90F224914771333657FF93E8 /* TagWorks.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = TagWorks.podspec; path = ../TagWorks.podspec; sourceTree = "<group>"; };
+		980A9E202A78A33600E1EDA7 /* Tracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tracker.swift; sourceTree = "<group>"; };
 		B9B0B140E38593F21ECB6AEE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		B9DDBCBA37FCA199DB587577 /* Pods-TagWorks_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TagWorks_Example.debug.xcconfig"; path = "Target Support Files/Pods-TagWorks_Example/Pods-TagWorks_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		C3E27EE528DF2AE5112BBA5F /* Pods-TagWorks_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TagWorks_Tests.debug.xcconfig"; path = "Target Support Files/Pods-TagWorks_Tests/Pods-TagWorks_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				980A9E202A78A33600E1EDA7 /* Tracker.swift */,
 			);
 			name = "Example for TagWorks";
 			path = TagWorks;
@@ -331,6 +334,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				980A9E212A78A33600E1EDA7 /* Tracker.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);

@@ -97,7 +97,7 @@
 		D52E89B9A15B6654FACD80F8D1A4C21D /* TagTypeParams.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TagTypeParams.swift; sourceTree = "<group>"; };
 		DAC95B3F6BB1D70E68BD823BB6B245C2 /* Logger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		DB0A253AB44E7D3712FDC8D89B77F5D0 /* Dimension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Dimension.swift; sourceTree = "<group>"; };
-		DF7D6E2C7D5B10F95CD5D1EE96E7DFAB /* TagWorks.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = TagWorks.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		DF7D6E2C7D5B10F95CD5D1EE96E7DFAB /* TagWorks.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = TagWorks.podspec; sourceTree = "<group>"; tabWidth = 2; };
 		DFC38DE75AAA357406CC9CE86653DA85 /* TagWorks-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TagWorks-dummy.m"; sourceTree = "<group>"; };
 		E0C9EC08D75B50490506D52E49530185 /* Pods-TagWorks_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TagWorks_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		F1C5D50D5EBBE2F650E748CE1A351EFB /* EventSerializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EventSerializer.swift; sourceTree = "<group>"; };

@@ -59,6 +59,7 @@ final public class TagWorks: NSObject {
     internal var dimensions: [Dimension] = []
     
     @objc public var contentUrl: URL?
+    @objc public var currentContentUrlPath: URL?
                 
     required public init(siteId: String, queue: Queue, dispatcher: Dispatcher) {
         self.siteId = siteId
@@ -67,6 +68,7 @@ final public class TagWorks: NSObject {
         self.contentUrl = URL(string: "http://\(Application.getApplicationInfo().bundleIdentifier ?? "")")
         self.tagWorksBase = TagWorksBase(suitName: "\(siteId)\(dispatcher.baseUrl.absoluteString)")
         super.init()
+        startDispatchTimer()
     }
     
     @objc convenience public init(siteId: String, baseUrl: URL, userAgent: String? = nil) {
@@ -141,7 +143,7 @@ final public class TagWorks: NSObject {
         }
     }
     
-    @objc public var dispatchInterval: TimeInterval = 30.0 {
+    @objc public var dispatchInterval: TimeInterval = 10.0 {
         didSet {
             startDispatchTimer()
         }
@@ -176,6 +178,15 @@ extension TagWorks {
     
     public func event(eventType: String, dimensions: [Dimension] = [], customUserPath: String? = nil){
         let event = Event(tagWorks: self, eventType: eventType, customUserPath: customUserPath, dimensions: dimensions)
+        queue(event: event)
+    }
+}
+
+extension TagWorks {
+    
+    public func pageView(pagePath: [String], pageTitle: String?, dimensions: [Dimension] = [], customUserPath: String? = nil){
+        currentContentUrlPath = self.contentUrl?.appendingPathComponent(pagePath.joined(separator: "/"))
+        let event = Event(tagWorks: self, eventType: TagTypeParams.PAGE_VIEW, pageTitle: pageTitle, customUserPath: customUserPath, dimensions: dimensions)
         queue(event: event)
     }
 }

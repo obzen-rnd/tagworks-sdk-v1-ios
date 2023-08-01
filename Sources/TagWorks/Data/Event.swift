@@ -39,7 +39,7 @@ extension Event {
         self.siteId = tagWorks.siteId
         self.visitorId = tagWorks.visitorId
         self.userId = tagWorks.userId
-        self.url = url ?? tagWorks.contentUrl?.appendingPathComponent(action.joined(separator: "/"))
+        self.url = url ?? tagWorks.currentContentUrlPath
         self.urlReferer = urlReferer
         self.language = Locale.httpAcceptLanguage
         self.clientDateTime = Date()

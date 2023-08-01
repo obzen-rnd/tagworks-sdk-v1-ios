@@ -11,8 +11,6 @@ final class EventSerializer: Serializer {
     internal func queryItems(for event: Event) -> [String : String] {
         event.queryItems.reduce(into: [String:String]()) {
             $0[$1.name] = $1.value
-        }.compactMapValues {
-            $0.addingPercentEncoding(withAllowedCharacters: .urlQueryParameterAllowed)
         }
     }
     
@@ -31,7 +29,16 @@ final class EventSerializer: Serializer {
 fileprivate extension Event {
     
     private func serializeEventString() -> String {
-        return ""
+        var eventCommonItems: [URLQueryItem] = []
+        eventCommonItems.append(URLQueryItem(name: TagWorksParams.EventParams.clientDateTime, value: CommonUtil.Formatter.iso8601DateFormatter.string(from: clientDateTime)))
+        eventCommonItems.append(URLQueryItem(name: TagWorksParams.EventParams.triggerType, value: eventType))
+        if pageTitle != nil { eventCommonItems.append(URLQueryItem(name: TagWorksParams.EventParams.pageTitle, value: pageTitle)) }
+        if searchKeyword != nil { eventCommonItems.append(URLQueryItem(name: TagWorksParams.EventParams.searchKeyword, value: searchKeyword)) }
+        if customUserPath != nil { eventCommonItems.append(URLQueryItem(name: TagWorksParams.EventParams.customUserPath, value: customUserPath)) }
+        let customDimensionItems = dimensions.map { URLQueryItem(name: TagWorksParams.EventParams.customDimension + "\($0.index)", value: $0.value) }
+        let eventsAsQueryItems = eventCommonItems + customDimensionItems
+        let serializedEvents = eventsAsQueryItems.reduce(into: [String:String]()) { $0[$1.name] = $1.value }
+        return serializedEvents.map{ "\($0.key)=\($0.value)" }.joined(separator: "&")
     }
     
     var queryItems: [URLQueryItem] {
