@@ -9,6 +9,7 @@ import Foundation
 
 public struct TagTypeParams {
 
-    static let CLICK = "Click"
-    static let PAGE_VIEW = "PageView"
+    static let click = "Click"
+    static let pageView = "PageView"
+    static let searchKeyword = "Search"
 }

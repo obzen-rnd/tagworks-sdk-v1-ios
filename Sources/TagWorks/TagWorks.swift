@@ -177,18 +177,19 @@ extension TagWorks {
         queue(event: event)
     }
     
-    public func event(eventType: String, dimensions: [Dimension] = [], customUserPath: String? = nil){
+    @objc public func event(eventType: String, dimensions: [Dimension] = [], customUserPath: String? = nil){
         let event = Event(tagWorks: self, eventType: eventType, customUserPath: customUserPath, dimensions: dimensions)
         queue(event: event)
     }
-}
-
-extension TagWorks {
     
-    public func pageView(pagePath: [String], pageTitle: String?, dimensions: [Dimension] = [], customUserPath: String? = nil){
+    @objc public func pageView(pagePath: [String], pageTitle: String?, dimensions: [Dimension] = [], customUserPath: String? = nil){
         currentContentUrlPath = self.contentUrl?.appendingPathComponent(pagePath.joined(separator: "/"))
-        let event = Event(tagWorks: self, eventType: TagTypeParams.PAGE_VIEW, pageTitle: pageTitle, customUserPath: customUserPath, dimensions: dimensions)
+        let event = Event(tagWorks: self, eventType: TagTypeParams.pageView, pageTitle: pageTitle, customUserPath: customUserPath, dimensions: dimensions)
+        queue(event: event)
+    }
+    
+    @objc public func searchKeyword(keyword: String, dimensions: [Dimension] = [], customUserPath: String? = nil){
+        let event = Event(tagWorks: self, eventType: TagTypeParams.searchKeyword, searchKeyword: keyword, customUserPath: customUserPath, dimensions: dimensions)
         queue(event: event)
     }
 }
-

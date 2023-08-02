@@ -7,12 +7,12 @@
 
 import Foundation
 
-public struct Dimension: Codable {
+public final class Dimension: NSObject, Codable {
     
     let index: Int
     let value: String
     
-    public init(index: Int, value: String){
+    @objc public init(index: Int, value: String){
         self.index = index
         self.value = value
     }
