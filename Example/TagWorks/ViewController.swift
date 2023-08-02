@@ -16,6 +16,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         Tracker.shared.pageView(pagePath: ["Main","Home"], pageTitle: "홈스크린")
         //Tracker.shared.event(eventType: "Click")
+        
         Tracker.shared.event(eventType: "Search", dimensions: [Dimension(index: 0, value: "디멘젼0"), Dimension(index: 1, value: "디멘젼1")], customUserPath: "/main/home")
         //Tracker.shared.dispatch()
     }

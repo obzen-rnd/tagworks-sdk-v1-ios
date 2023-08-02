@@ -1,11 +1,12 @@
+//
+//  CommonUtil.swift
+//  TagWorks SDK for iOS
+//
+//  Copyright (c) 2023 obzen All rights reserved.
+//
+
 import Foundation
 
-/// Sumarry
-///
-/// Discussion/Overview
-///
-/// - Date: 2023-07-28
-/// - Version: 1.0.0
 final class CommonUtil {
     
     internal struct Formatter {
@@ -21,6 +22,7 @@ final class CommonUtil {
 }
 
 extension Locale {
+    
     static var httpAcceptLanguage: String {
         var components: [String] = []
         for (index, languageCode) in preferredLanguages.enumerated() {

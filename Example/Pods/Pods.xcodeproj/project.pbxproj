@@ -20,9 +20,11 @@
 		6D4A9F1A88BE3A8A0931527D3FEE798F /* Pods-TagWorks_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4917F8397A078E0AFDC5CFAA30FD8610 /* Pods-TagWorks_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7767B01CA4BF974F130FA8A2437FE65D /* UserAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C3BDA41E4F78BC216A782CF61B3FEB /* UserAgent.swift */; };
 		89039C20927CE9DD1849EC61747D8BC7 /* TagWorks-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC38DE75AAA357406CC9CE86653DA85 /* TagWorks-dummy.m */; };
-		91E84A6AE591C601A2F0DFA58AA3CDDB /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC95B3F6BB1D70E68BD823BB6B245C2 /* Logger.swift */; };
 		9321A8D8FAC5DD6C1129D00F0EE8669D /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07C1A3DE4F33F1424402D803906773A /* Queue.swift */; };
 		96AB9B116CC21506D714E7E10B7B4067 /* DefaultDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F7D03C0800B2E4BCC113BE34949A2A /* DefaultDispatcher.swift */; };
+		980A9E292A79EADF00E1EDA7 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980A9E282A79EADF00E1EDA7 /* Logger.swift */; };
+		980A9E2B2A79EB0800E1EDA7 /* DefaultLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980A9E2A2A79EB0800E1EDA7 /* DefaultLogger.swift */; };
+		980A9E2D2A79EB3F00E1EDA7 /* LogLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980A9E2C2A79EB3F00E1EDA7 /* LogLevel.swift */; };
 		AE35658962FC8D128D98953F3CBD3013 /* Pods-TagWorks_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B7BC8AA205A4E151852C344B24F72A /* Pods-TagWorks_Tests-dummy.m */; };
 		C065BA059664AB74E8FA2F09ED5281B6 /* TagTypeParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52E89B9A15B6654FACD80F8D1A4C21D /* TagTypeParams.swift */; };
 		C311699350EB1AE0E7A5E5F9C3596730 /* TagWorks-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F4D2E8814925621B3625F70A1DA4C240 /* TagWorks-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -83,6 +85,9 @@
 		8DDFF4A78CDD814EA346CD879B1006E1 /* Pods-TagWorks_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TagWorks_Example-frameworks.sh"; sourceTree = "<group>"; };
 		915F7C44C38D18310160BA2FC651A79C /* CommonUtil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CommonUtil.swift; sourceTree = "<group>"; };
 		92F7D03C0800B2E4BCC113BE34949A2A /* DefaultDispatcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DefaultDispatcher.swift; sourceTree = "<group>"; };
+		980A9E282A79EADF00E1EDA7 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		980A9E2A2A79EB0800E1EDA7 /* DefaultLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultLogger.swift; sourceTree = "<group>"; };
+		980A9E2C2A79EB3F00E1EDA7 /* LogLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogLevel.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9F3DCAAF6320E693F7F596D28FF90F79 /* Pods-TagWorks_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TagWorks_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		A8E749F2105812ED8178A4DA6DE24B09 /* TagWorks.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TagWorks.swift; path = Sources/TagWorks/TagWorks.swift; sourceTree = "<group>"; };
@@ -95,7 +100,6 @@
 		D14A55E9E4A7F3F30628093E352E8781 /* TagWorks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TagWorks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1ECACC2694641DCD0F3484F64D1D623 /* TagWorks.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TagWorks.modulemap; sourceTree = "<group>"; };
 		D52E89B9A15B6654FACD80F8D1A4C21D /* TagTypeParams.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TagTypeParams.swift; sourceTree = "<group>"; };
-		DAC95B3F6BB1D70E68BD823BB6B245C2 /* Logger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		DB0A253AB44E7D3712FDC8D89B77F5D0 /* Dimension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Dimension.swift; sourceTree = "<group>"; };
 		DF7D6E2C7D5B10F95CD5D1EE96E7DFAB /* TagWorks.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = TagWorks.podspec; sourceTree = "<group>"; tabWidth = 2; };
 		DFC38DE75AAA357406CC9CE86653DA85 /* TagWorks-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TagWorks-dummy.m"; sourceTree = "<group>"; };
@@ -245,7 +249,7 @@
 				92F7D03C0800B2E4BCC113BE34949A2A /* DefaultDispatcher.swift */,
 				1ED47A50BC870FEB43357CBF06528F83 /* DefaultQueue.swift */,
 				F1C5D50D5EBBE2F650E748CE1A351EFB /* EventSerializer.swift */,
-				DAC95B3F6BB1D70E68BD823BB6B245C2 /* Logger.swift */,
+				980A9E2A2A79EB0800E1EDA7 /* DefaultLogger.swift */,
 			);
 			name = Util;
 			path = Sources/TagWorks/Util;
@@ -272,6 +276,7 @@
 			children = (
 				D52E89B9A15B6654FACD80F8D1A4C21D /* TagTypeParams.swift */,
 				67292B4BC05AC08622E1DBCFA5D1C7A8 /* TagWorksParams.swift */,
+				980A9E2C2A79EB3F00E1EDA7 /* LogLevel.swift */,
 			);
 			name = Constants;
 			path = Sources/TagWorks/Constants;
@@ -291,6 +296,7 @@
 		D0C94924E67133071EF2585A51A9F296 /* Interface */ = {
 			isa = PBXGroup;
 			children = (
+				980A9E282A79EADF00E1EDA7 /* Logger.swift */,
 				6AC4F03BB6C23E0EAAFD9DFE67F7FB1A /* Dispatcher.swift */,
 				D07C1A3DE4F33F1424402D803906773A /* Queue.swift */,
 				581C8C70A3E311D7C09514F37C8C7603 /* Serializer.swift */,
@@ -452,20 +458,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				980A9E292A79EADF00E1EDA7 /* Logger.swift in Sources */,
 				25175B98D3EB614574AAA0FB46CAE131 /* Application.swift in Sources */,
 				CE11127FFBF7C340E99D238477FBEA85 /* CommonUtil.swift in Sources */,
 				96AB9B116CC21506D714E7E10B7B4067 /* DefaultDispatcher.swift in Sources */,
+				980A9E2D2A79EB3F00E1EDA7 /* LogLevel.swift in Sources */,
 				405DF2EE59738D6ADF00D209250E63F8 /* DefaultQueue.swift in Sources */,
 				DBE425FA09E2AD947B7843CB5BD541C9 /* Device.swift in Sources */,
 				233612F8E6813307083F175E4E9F0C7D /* Dimension.swift in Sources */,
 				FCA593D4235B8296D48045C5706BD832 /* Dispatcher.swift in Sources */,
 				3977CC5A9DB500C28BE6A0D4B7EB1813 /* Event.swift in Sources */,
 				672C6D05985D0B51EED4CC7AC7FBA586 /* EventSerializer.swift in Sources */,
-				91E84A6AE591C601A2F0DFA58AA3CDDB /* Logger.swift in Sources */,
 				9321A8D8FAC5DD6C1129D00F0EE8669D /* Queue.swift in Sources */,
 				E50C67F1519EACF1572D88C4C7371135 /* Serializer.swift in Sources */,
 				C065BA059664AB74E8FA2F09ED5281B6 /* TagTypeParams.swift in Sources */,
 				F8F1120F7DB56E820279C3F9BF9A2A4E /* TagWorks.swift in Sources */,
+				980A9E2B2A79EB0800E1EDA7 /* DefaultLogger.swift in Sources */,
 				89039C20927CE9DD1849EC61747D8BC7 /* TagWorks-dummy.m in Sources */,
 				2BE2B4578E2DC8F74CD5C56019FE8645 /* TagWorksBase.swift in Sources */,
 				C65503B803A5AAE25CD124596BCD08ED /* TagWorksParams.swift in Sources */,

@@ -1,31 +1,28 @@
+//
+//  DefaultLogger.swift
+//  TagWorks SDK for iOS
+//
+//  Copyright (c) 2023 obzen All rights reserved.
+//
+
 import Foundation
 
-/// Sumarry
-///
-/// Discussion/Overview
-///
-/// - Date: 2023-07-28
-/// - Version: 1.0.0
-@objc public enum LogLevel: Int {
-    case verbose = 10
-    case debug = 20
-    case info = 30
-    case warning = 40
-    case error = 50
+@objc public final class DefaultLogger: NSObject, Logger {
+    private let dispatchQueue = DispatchQueue(label: "DefaultLogger", qos: .background)
+    private let minLevel: LogLevel
     
-    var shortcut: String {
-        switch self {
-        case .error: return "E"
-        case .warning: return "W"
-        case .info: return "I"
-        case .debug: return "D"
-        case .verbose: return "V"
+    @objc public init(minLevel: LogLevel) {
+        self.minLevel = minLevel
+        super.init()
+    }
+    
+    public func log(_ message: @autoclosure () -> String, with level: LogLevel, file: String = #file, function: String = #function, line: Int = #line) {
+        guard level.rawValue >= minLevel.rawValue else { return }
+        let messageToPrint = message()
+        dispatchQueue.async {
+            print("TagWorks [\(level.shortcut)] \(messageToPrint)")
         }
     }
-}
-
-@objc public protocol Logger {
-    func log(_ message: @autoclosure () -> String, with level: LogLevel, file: String, function: String, line: Int)
 }
 
 extension Logger {
@@ -48,22 +45,4 @@ extension Logger {
 
 public final class DisabledLogger: Logger {
     public func log(_ message: @autoclosure () -> String, with level: LogLevel, file: String = #file, function: String = #function, line: Int = #line) { }
-}
-
-@objc public final class DefaultLogger: NSObject, Logger {
-    private let dispatchQueue = DispatchQueue(label: "DefaultLogger", qos: .background)
-    private let minLevel: LogLevel
-    
-    @objc public init(minLevel: LogLevel) {
-        self.minLevel = minLevel
-        super.init()
-    }
-    
-    public func log(_ message: @autoclosure () -> String, with level: LogLevel, file: String = #file, function: String = #function, line: Int = #line) {
-        guard level.rawValue >= minLevel.rawValue else { return }
-        let messageToPrint = message()
-        dispatchQueue.async {
-            print("TagWorks [\(level.shortcut)] \(messageToPrint)")
-        }
-    }
 }

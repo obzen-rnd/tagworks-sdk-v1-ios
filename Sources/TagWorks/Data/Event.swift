@@ -1,12 +1,13 @@
+//
+//  Event.swift
+//  TagWorks SDK for iOS
+//
+//  Copyright (c) 2023 obzen All rights reserved.
+//
+
 import Foundation
 import CoreGraphics
 
-/// Sumarry
-///
-/// Discussion/Overview
-///
-/// - Date: 2023-07-27
-/// - Version: 1.0.0
 public struct Event: Codable {
     
     public let uuid: UUID

@@ -1,11 +1,12 @@
+//
+//  Serializer.swift
+//  TagWorks SDK for iOS
+//
+//  Copyright (c) 2023 obzen All rights reserved.
+//
+
 import Foundation
 
-/// Sumarry
-///
-/// Discussion/Overview
-///
-/// - Date: 2023-07-28
-/// - Version: 1.0.0
 public protocol Serializer {
     
     func queryItems(for event: Event) -> [String: String]

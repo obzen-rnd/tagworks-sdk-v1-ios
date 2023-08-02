@@ -1,11 +1,12 @@
+//
+//  TagWorksParams.swift
+//  TagWorks SDK for iOS
+//
+//  Copyright (c) 2023 obzen All rights reserved.
+//
+
 import Foundation
 
-/// Sumarry
-///
-/// Discussion/Overview
-///
-/// - Date: 2023-07-27
-/// - Version: 1.0.0
 internal struct TagWorksParams {
     
     internal struct Key {
