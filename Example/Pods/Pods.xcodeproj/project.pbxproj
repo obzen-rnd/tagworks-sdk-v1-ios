@@ -26,9 +26,8 @@
 		980A9E2B2A79EB0800E1EDA7 /* DefaultLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980A9E2A2A79EB0800E1EDA7 /* DefaultLogger.swift */; };
 		980A9E2D2A79EB3F00E1EDA7 /* LogLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980A9E2C2A79EB3F00E1EDA7 /* LogLevel.swift */; };
 		AE35658962FC8D128D98953F3CBD3013 /* Pods-TagWorks_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B7BC8AA205A4E151852C344B24F72A /* Pods-TagWorks_Tests-dummy.m */; };
-		C065BA059664AB74E8FA2F09ED5281B6 /* TagTypeParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52E89B9A15B6654FACD80F8D1A4C21D /* TagTypeParams.swift */; };
 		C311699350EB1AE0E7A5E5F9C3596730 /* TagWorks-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F4D2E8814925621B3625F70A1DA4C240 /* TagWorks-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C65503B803A5AAE25CD124596BCD08ED /* TagWorksParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67292B4BC05AC08622E1DBCFA5D1C7A8 /* TagWorksParams.swift */; };
+		C65503B803A5AAE25CD124596BCD08ED /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67292B4BC05AC08622E1DBCFA5D1C7A8 /* Common.swift */; };
 		CE11127FFBF7C340E99D238477FBEA85 /* CommonUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915F7C44C38D18310160BA2FC651A79C /* CommonUtil.swift */; };
 		DBE425FA09E2AD947B7843CB5BD541C9 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7D6A9207F5F0EA414E8583D30B6193 /* Device.swift */; };
 		E24FCAF614991EEE04EFE60100885BDE /* Pods-TagWorks_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D044260E697BABD43625CF17BC4959 /* Pods-TagWorks_Example-dummy.m */; };
@@ -74,7 +73,7 @@
 		5C3A49A066752A4FC973190A4EC73A3C /* Pods-TagWorks_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TagWorks_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		5D65BD80EBC8694EF21767D813516321 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		63FAACFFF23B3CA69C01F9B59EC5CAE8 /* Pods-TagWorks_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TagWorks_Example.release.xcconfig"; sourceTree = "<group>"; };
-		67292B4BC05AC08622E1DBCFA5D1C7A8 /* TagWorksParams.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TagWorksParams.swift; sourceTree = "<group>"; };
+		67292B4BC05AC08622E1DBCFA5D1C7A8 /* Common.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		6AC4F03BB6C23E0EAAFD9DFE67F7FB1A /* Dispatcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Dispatcher.swift; sourceTree = "<group>"; };
 		6AF36089058FF3B3476FD30AAF4ED653 /* Pods-TagWorks_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TagWorks_Example.modulemap"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -99,7 +98,6 @@
 		D07C1A3DE4F33F1424402D803906773A /* Queue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 		D14A55E9E4A7F3F30628093E352E8781 /* TagWorks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TagWorks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1ECACC2694641DCD0F3484F64D1D623 /* TagWorks.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TagWorks.modulemap; sourceTree = "<group>"; };
-		D52E89B9A15B6654FACD80F8D1A4C21D /* TagTypeParams.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TagTypeParams.swift; sourceTree = "<group>"; };
 		DB0A253AB44E7D3712FDC8D89B77F5D0 /* Dimension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Dimension.swift; sourceTree = "<group>"; };
 		DF7D6E2C7D5B10F95CD5D1EE96E7DFAB /* TagWorks.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = TagWorks.podspec; sourceTree = "<group>"; tabWidth = 2; };
 		DFC38DE75AAA357406CC9CE86653DA85 /* TagWorks-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TagWorks-dummy.m"; sourceTree = "<group>"; };
@@ -274,8 +272,7 @@
 		C00F2CF59A6A6F724B55CC83B87FE694 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
-				D52E89B9A15B6654FACD80F8D1A4C21D /* TagTypeParams.swift */,
-				67292B4BC05AC08622E1DBCFA5D1C7A8 /* TagWorksParams.swift */,
+				67292B4BC05AC08622E1DBCFA5D1C7A8 /* Common.swift */,
 				980A9E2C2A79EB3F00E1EDA7 /* LogLevel.swift */,
 			);
 			name = Constants;
@@ -471,12 +468,11 @@
 				672C6D05985D0B51EED4CC7AC7FBA586 /* EventSerializer.swift in Sources */,
 				9321A8D8FAC5DD6C1129D00F0EE8669D /* Queue.swift in Sources */,
 				E50C67F1519EACF1572D88C4C7371135 /* Serializer.swift in Sources */,
-				C065BA059664AB74E8FA2F09ED5281B6 /* TagTypeParams.swift in Sources */,
 				F8F1120F7DB56E820279C3F9BF9A2A4E /* TagWorks.swift in Sources */,
 				980A9E2B2A79EB0800E1EDA7 /* DefaultLogger.swift in Sources */,
 				89039C20927CE9DD1849EC61747D8BC7 /* TagWorks-dummy.m in Sources */,
 				2BE2B4578E2DC8F74CD5C56019FE8645 /* TagWorksBase.swift in Sources */,
-				C65503B803A5AAE25CD124596BCD08ED /* TagWorksParams.swift in Sources */,
+				C65503B803A5AAE25CD124596BCD08ED /* Common.swift in Sources */,
 				7767B01CA4BF974F130FA8A2437FE65D /* UserAgent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

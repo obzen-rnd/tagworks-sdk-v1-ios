@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// TagWorks Logger 의 로그 레벨을 열거합니다.
 @objc public enum LogLevel: Int {
     case verbose = 10
     case debug = 20

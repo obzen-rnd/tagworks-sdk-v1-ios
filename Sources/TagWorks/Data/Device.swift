@@ -4,19 +4,33 @@
 //
 //  Copyright (c) 2023 obzen All rights reserved.
 //
-
 import Foundation
 import UIKit
 
+/// 수집되는 디바이스의 정보를 저장하는 구조체입니다.
 public struct Device {
     
+    /// 디바이스 플랫폼
     public let devicePlatform: String
+    
+    /// 디바이스 OS
     public let deviceOperatingSystem: String
+    
+    /// 디바이스 OS Version
     public let deviceOperatingSystemVersion: String
+    
+    /// 디바이스 스크린 사이즈 포인트
     public let deviceScreenSize: CGSize
+    
+    /// 디바이스 스크린 사이즈 픽셀
     public let deviceNativeScreenSize: CGSize
+    
+    /// 디바이스 OS 커널 Version
     public let deviceDarwinVersion: String?
     
+    
+    /// 수집되는 디바이스의 정보 구조체를 반환합니다.
+    /// - Returns: 디바이스 구조체
     public static func getDeviceInfo() -> Device {
         return Device(devicePlatform: getDevicePlatform(),
                       deviceOperatingSystem: getDeviceOperatingSystem(),
@@ -29,6 +43,8 @@ public struct Device {
 
 extension Device {
     
+    /// 디바이스 플랫폼 정보를 반환합니다.
+    /// - Returns: 디바이스 플랫폼
     private static func getDevicePlatform() -> String {
         #if targetEnvironment(simulator)
             return ProcessInfo().environment["SIMULATOR_MODEL_IDENTIFIER"] ?? "x86_64"
@@ -41,22 +57,32 @@ extension Device {
         #endif
     }
     
+    /// 디바이스 OS를 반환합니다.
+    /// - Returns: 디바이스 OS
     private static func getDeviceOperatingSystem() -> String {
         return "iOS"
     }
     
+    /// 디바이스 OS Version을 반환합니다.
+    /// - Returns: 디바이스 OS Version
     private static func getDeviceOperatingSystemVersion() -> String {
         return UIDevice.current.systemVersion
     }
     
+    /// 디바이스 스크린 사이즈 포인트를 반환합니다.
+    /// - Returns: 디바이스 스크린 사이즈 포인트
     private static func getDeviceScreenSize() -> CGSize {
         return UIScreen.main.bounds.size
     }
     
+    /// 디바이스 스크린 사이즈 픽셀을 반환합니다.
+    /// - Returns: 디바이스 스크린 사이즈 픽셀
     private static func getDeviceNativeScreenSize() -> CGSize {
         return UIScreen.main.nativeBounds.size
     }
     
+    /// 디바이스 OS 커널 Version을 반환합니다.
+    /// - Returns: 디바이스 OS 커널 Version
     private static func getDeviceDarwinVersion() -> String? {
         var sysinfo = utsname()
         uname(&sysinfo)
