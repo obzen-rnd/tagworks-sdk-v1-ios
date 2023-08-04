@@ -7,103 +7,103 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		045EFFB2966D4735A022F66AF76992B3 /* CommonUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = D271FF0163C5AD54BA9C608330CA1E12 /* CommonUtil.swift */; };
+		110EC950A28DD3AB7AFAA5662018751A /* Dispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7100634A60BFF854D8A580765B2EB1 /* Dispatcher.swift */; };
 		15ECB51EB841D7A1AC44B0A8BFAD9C12 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		233612F8E6813307083F175E4E9F0C7D /* Dimension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0A253AB44E7D3712FDC8D89B77F5D0 /* Dimension.swift */; };
-		25175B98D3EB614574AAA0FB46CAE131 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E1FE34EE443B6A9917AF9E0A71D7BA /* Application.swift */; };
 		272EA626327A720186C262A51DD3CCC0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		2BE2B4578E2DC8F74CD5C56019FE8645 /* TagWorksBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079CBF52132A5403F0C9444FE71B889C /* TagWorksBase.swift */; };
-		3977CC5A9DB500C28BE6A0D4B7EB1813 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A65BDA107B5A06A1383124270EF540 /* Event.swift */; };
-		405DF2EE59738D6ADF00D209250E63F8 /* DefaultQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED47A50BC870FEB43357CBF06528F83 /* DefaultQueue.swift */; };
+		2B4DB6E2D25CD744EFE82B12BC0366B7 /* TagWorks-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FFFC4C5147B20DBFCF0E9809543BDF9 /* TagWorks-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2DE7D4C7BBFE73E1AD45650D184143E7 /* UserAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE75CB3AB793D3BC6E6BC6C5DED54FD /* UserAgent.swift */; };
+		337B14F2E23E244AEBCB2AD53F54CD8F /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB689641A6569209429496B5E3D2B14 /* Application.swift */; };
+		39CCAFDFCA6AD5148EC41C004E325548 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3324986C40E26F86514B7ACC94E6CBF /* Queue.swift */; };
+		3B90401591FD5EC658BE63C14204EFA2 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8CAE0C36AF8A511635343E3791D4EF /* Event.swift */; };
+		4364B1ACB172FA3691E667946B4669E8 /* TagWorks-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BDE64F745985B588577ED3642D8893B /* TagWorks-dummy.m */; };
+		499B942D0A878D038977961AA0932FED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		56791037A5739C483D6D227E4B359757 /* Pods-TagWorks_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A8E357D6C43F180182111CAAC70296B /* Pods-TagWorks_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		672C6D05985D0B51EED4CC7AC7FBA586 /* EventSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C5D50D5EBBE2F650E748CE1A351EFB /* EventSerializer.swift */; };
-		6B17C55A85AB5DABF24B2F270EA83443 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		61808D790DD73034544FB50BA210FE3F /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C9161DAAFC0143467E45EE8C615073 /* Logger.swift */; };
+		629447CCE72BD9FC8596FB3DB6B4194B /* TagWorksBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772AE388EF216B7487E0D37EE52995AA /* TagWorksBase.swift */; };
+		65DC25CA366F71A14DC563B529CC6CF5 /* LogLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9BEFB1BD9C507076B6A46C9754DB7C /* LogLevel.swift */; };
 		6D4A9F1A88BE3A8A0931527D3FEE798F /* Pods-TagWorks_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4917F8397A078E0AFDC5CFAA30FD8610 /* Pods-TagWorks_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7767B01CA4BF974F130FA8A2437FE65D /* UserAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C3BDA41E4F78BC216A782CF61B3FEB /* UserAgent.swift */; };
-		89039C20927CE9DD1849EC61747D8BC7 /* TagWorks-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC38DE75AAA357406CC9CE86653DA85 /* TagWorks-dummy.m */; };
-		9321A8D8FAC5DD6C1129D00F0EE8669D /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07C1A3DE4F33F1424402D803906773A /* Queue.swift */; };
-		96AB9B116CC21506D714E7E10B7B4067 /* DefaultDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F7D03C0800B2E4BCC113BE34949A2A /* DefaultDispatcher.swift */; };
-		980A9E292A79EADF00E1EDA7 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980A9E282A79EADF00E1EDA7 /* Logger.swift */; };
-		980A9E2B2A79EB0800E1EDA7 /* DefaultLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980A9E2A2A79EB0800E1EDA7 /* DefaultLogger.swift */; };
-		980A9E2D2A79EB3F00E1EDA7 /* LogLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980A9E2C2A79EB3F00E1EDA7 /* LogLevel.swift */; };
+		7082ED1CDB4A84B4C2642C48739B16F6 /* DefaultQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7DBDDAF96EAF7770599EB3E6048D0E /* DefaultQueue.swift */; };
+		83760FC429D8966C032075D947A70C6D /* DefaultDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1796F56E23AE15B84380216142DF1B /* DefaultDispatcher.swift */; };
+		87601ED81320EECF1D0C93F96F67825A /* EventSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE42D5986686C2B7BD70198846D80FD /* EventSerializer.swift */; };
+		8C663D4DCDE4C9DC355438C22229179F /* TagWorks.swift in Sources */ = {isa = PBXBuildFile; fileRef = A252AE1875C67719FF28BCD88E01D2A3 /* TagWorks.swift */; };
+		A1846848E7E35E5C9950F4CE88CAF49F /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9B3A4FFBBEF7FF4954185B783344C5 /* Device.swift */; };
 		AE35658962FC8D128D98953F3CBD3013 /* Pods-TagWorks_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B7BC8AA205A4E151852C344B24F72A /* Pods-TagWorks_Tests-dummy.m */; };
-		C311699350EB1AE0E7A5E5F9C3596730 /* TagWorks-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F4D2E8814925621B3625F70A1DA4C240 /* TagWorks-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C65503B803A5AAE25CD124596BCD08ED /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67292B4BC05AC08622E1DBCFA5D1C7A8 /* Common.swift */; };
-		CE11127FFBF7C340E99D238477FBEA85 /* CommonUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915F7C44C38D18310160BA2FC651A79C /* CommonUtil.swift */; };
-		DBE425FA09E2AD947B7843CB5BD541C9 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7D6A9207F5F0EA414E8583D30B6193 /* Device.swift */; };
+		CEE5C6BED0614A171FC8C36CD996232A /* DefaultLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E762CF46655A0FA78F18594F6D6387E /* DefaultLogger.swift */; };
 		E24FCAF614991EEE04EFE60100885BDE /* Pods-TagWorks_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D044260E697BABD43625CF17BC4959 /* Pods-TagWorks_Example-dummy.m */; };
-		E50C67F1519EACF1572D88C4C7371135 /* Serializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581C8C70A3E311D7C09514F37C8C7603 /* Serializer.swift */; };
-		F8F1120F7DB56E820279C3F9BF9A2A4E /* TagWorks.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E749F2105812ED8178A4DA6DE24B09 /* TagWorks.swift */; };
-		FCA593D4235B8296D48045C5706BD832 /* Dispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC4F03BB6C23E0EAAFD9DFE67F7FB1A /* Dispatcher.swift */; };
+		F674B5C5F76BA02D49C074EAB7A8FE5D /* Dimension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB2D52D57DD20DD8A742554AA17D88E /* Dimension.swift */; };
+		FA66AF2CD209CBB3B02EF65647B5CC24 /* Serializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E299A6343C75E6DC9CF8A72DE69683 /* Serializer.swift */; };
+		FEFD14D4E3EDE3E92877DECA9BDF385A /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D2C5D2320AF76BBC4859A1F881BA4D /* Common.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		8CDB82E52777B22F9713FF4D133A4378 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3305B76E30387FD7A354CE89EF095C66;
-			remoteInfo = "Pods-TagWorks_Example";
-		};
-		BAC74574F38C98FC33576A5F86DE6EE7 /* PBXContainerItemProxy */ = {
+		48288DEF3F2F5025592AC1C57F8F7241 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 300804565E669E6E3A02A112C6AF6919;
 			remoteInfo = TagWorks;
 		};
+		B52D2D882B45E3005692241FD662BF65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3305B76E30387FD7A354CE89EF095C66;
+			remoteInfo = "Pods-TagWorks_Example";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		03B7BC8AA205A4E151852C344B24F72A /* Pods-TagWorks_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TagWorks_Tests-dummy.m"; sourceTree = "<group>"; };
 		06563FD40851A88F13B1760BE0386C29 /* Pods-TagWorks_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TagWorks_Example-Info.plist"; sourceTree = "<group>"; };
-		079CBF52132A5403F0C9444FE71B889C /* TagWorksBase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TagWorksBase.swift; path = Sources/TagWorks/TagWorksBase.swift; sourceTree = "<group>"; };
 		07D044260E697BABD43625CF17BC4959 /* Pods-TagWorks_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TagWorks_Example-dummy.m"; sourceTree = "<group>"; };
-		146D814C0DBF29284D5B2634CA3C5D21 /* TagWorks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TagWorks.debug.xcconfig; sourceTree = "<group>"; };
-		1ED47A50BC870FEB43357CBF06528F83 /* DefaultQueue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DefaultQueue.swift; sourceTree = "<group>"; };
-		23A65BDA107B5A06A1383124270EF540 /* Event.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
-		29C3BDA41E4F78BC216A782CF61B3FEB /* UserAgent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UserAgent.swift; sourceTree = "<group>"; };
+		0F7DBDDAF96EAF7770599EB3E6048D0E /* DefaultQueue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DefaultQueue.swift; sourceTree = "<group>"; };
+		1E762CF46655A0FA78F18594F6D6387E /* DefaultLogger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DefaultLogger.swift; sourceTree = "<group>"; };
+		1FA5E9AB9E30D373494768B4E5AD0808 /* TagWorks-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TagWorks-Info.plist"; sourceTree = "<group>"; };
+		2816AC4D306802849D79A2644178151F /* TagWorks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TagWorks.debug.xcconfig; sourceTree = "<group>"; };
 		2CCA672C728468BE60DA65C1C1CF902E /* Pods-TagWorks_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TagWorks_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		2E3D9940E629B5ADAFBF245EACEDB582 /* Pods-TagWorks_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TagWorks_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		3A8E357D6C43F180182111CAAC70296B /* Pods-TagWorks_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TagWorks_Example-umbrella.h"; sourceTree = "<group>"; };
+		3C7100634A60BFF854D8A580765B2EB1 /* Dispatcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Dispatcher.swift; sourceTree = "<group>"; };
+		3DB2D52D57DD20DD8A742554AA17D88E /* Dimension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Dimension.swift; sourceTree = "<group>"; };
+		3EAC6E86CC424C9A67FE40609E954F97 /* TagWorks-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TagWorks-prefix.pch"; sourceTree = "<group>"; };
+		43D2C5D2320AF76BBC4859A1F881BA4D /* Common.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		4917F8397A078E0AFDC5CFAA30FD8610 /* Pods-TagWorks_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TagWorks_Tests-umbrella.h"; sourceTree = "<group>"; };
 		5265FB1E56EF64F27DAADD03D8FA293C /* Pods-TagWorks_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TagWorks_Tests.modulemap"; sourceTree = "<group>"; };
-		56E1FE34EE443B6A9917AF9E0A71D7BA /* Application.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
-		581C8C70A3E311D7C09514F37C8C7603 /* Serializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Serializer.swift; sourceTree = "<group>"; };
-		5BBE475F61B298C20B15011069F00C9F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		5C3A49A066752A4FC973190A4EC73A3C /* Pods-TagWorks_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TagWorks_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		5D65BD80EBC8694EF21767D813516321 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		5E8CAE0C36AF8A511635343E3791D4EF /* Event.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		624E5BC803AD70F06067DC091D136DC3 /* TagWorks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TagWorks.release.xcconfig; sourceTree = "<group>"; };
 		63FAACFFF23B3CA69C01F9B59EC5CAE8 /* Pods-TagWorks_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TagWorks_Example.release.xcconfig"; sourceTree = "<group>"; };
-		67292B4BC05AC08622E1DBCFA5D1C7A8 /* Common.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
-		6AC4F03BB6C23E0EAAFD9DFE67F7FB1A /* Dispatcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Dispatcher.swift; sourceTree = "<group>"; };
+		66C9161DAAFC0143467E45EE8C615073 /* Logger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		6AF36089058FF3B3476FD30AAF4ED653 /* Pods-TagWorks_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TagWorks_Example.modulemap"; sourceTree = "<group>"; };
+		6FA7C8060DEB9A450F84A2AC18350693 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		766A7AF7F2145892864ADD1075B158C6 /* TagWorks.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TagWorks.modulemap; sourceTree = "<group>"; };
+		772AE388EF216B7487E0D37EE52995AA /* TagWorksBase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TagWorksBase.swift; path = Sources/TagWorks/TagWorksBase.swift; sourceTree = "<group>"; };
+		7BB689641A6569209429496B5E3D2B14 /* Application.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
+		7BDE64F745985B588577ED3642D8893B /* TagWorks-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TagWorks-dummy.m"; sourceTree = "<group>"; };
 		7EFB66E94E7B4EC4625B0BF00B98D110 /* Pods-TagWorks_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TagWorks_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		83C12C3817C17319431B55C355BC1C88 /* Pods_TagWorks_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TagWorks_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FE75CB3AB793D3BC6E6BC6C5DED54FD /* UserAgent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UserAgent.swift; sourceTree = "<group>"; };
+		83C12C3817C17319431B55C355BC1C88 /* Pods-TagWorks_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-TagWorks_Tests"; path = Pods_TagWorks_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B021B8D9CB2C35937EBE35665A8C3B7 /* Pods-TagWorks_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TagWorks_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		8B31917408A63A81828DFF7A37445A87 /* TagWorks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TagWorks.release.xcconfig; sourceTree = "<group>"; };
 		8DDFF4A78CDD814EA346CD879B1006E1 /* Pods-TagWorks_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TagWorks_Example-frameworks.sh"; sourceTree = "<group>"; };
-		915F7C44C38D18310160BA2FC651A79C /* CommonUtil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CommonUtil.swift; sourceTree = "<group>"; };
-		92F7D03C0800B2E4BCC113BE34949A2A /* DefaultDispatcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DefaultDispatcher.swift; sourceTree = "<group>"; };
-		980A9E282A79EADF00E1EDA7 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
-		980A9E2A2A79EB0800E1EDA7 /* DefaultLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultLogger.swift; sourceTree = "<group>"; };
-		980A9E2C2A79EB3F00E1EDA7 /* LogLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogLevel.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		8FFFC4C5147B20DBFCF0E9809543BDF9 /* TagWorks-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TagWorks-umbrella.h"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9F3DCAAF6320E693F7F596D28FF90F79 /* Pods-TagWorks_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TagWorks_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		A8E749F2105812ED8178A4DA6DE24B09 /* TagWorks.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TagWorks.swift; path = Sources/TagWorks/TagWorks.swift; sourceTree = "<group>"; };
+		A252AE1875C67719FF28BCD88E01D2A3 /* TagWorks.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TagWorks.swift; path = Sources/TagWorks/TagWorks.swift; sourceTree = "<group>"; };
+		AB9BEFB1BD9C507076B6A46C9754DB7C /* LogLevel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LogLevel.swift; sourceTree = "<group>"; };
 		B158F12AC5966D9734D0740414FF4D4B /* Pods-TagWorks_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TagWorks_Tests-Info.plist"; sourceTree = "<group>"; };
-		B6CFD7C91D1781678BA44D526181DA6D /* TagWorks-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TagWorks-Info.plist"; sourceTree = "<group>"; };
-		BD7D6A9207F5F0EA414E8583D30B6193 /* Device.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
-		C07331F0461C542BCF8D7ADC2A6D7CB8 /* Pods_TagWorks_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TagWorks_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C960AA05C8FB95F617772731E016F32D /* TagWorks-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TagWorks-prefix.pch"; sourceTree = "<group>"; };
-		D07C1A3DE4F33F1424402D803906773A /* Queue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
-		D14A55E9E4A7F3F30628093E352E8781 /* TagWorks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TagWorks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D1ECACC2694641DCD0F3484F64D1D623 /* TagWorks.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TagWorks.modulemap; sourceTree = "<group>"; };
-		DB0A253AB44E7D3712FDC8D89B77F5D0 /* Dimension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Dimension.swift; sourceTree = "<group>"; };
-		DF7D6E2C7D5B10F95CD5D1EE96E7DFAB /* TagWorks.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = TagWorks.podspec; sourceTree = "<group>"; tabWidth = 2; };
-		DFC38DE75AAA357406CC9CE86653DA85 /* TagWorks-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TagWorks-dummy.m"; sourceTree = "<group>"; };
+		C07331F0461C542BCF8D7ADC2A6D7CB8 /* Pods-TagWorks_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-TagWorks_Example"; path = Pods_TagWorks_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0E299A6343C75E6DC9CF8A72DE69683 /* Serializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Serializer.swift; sourceTree = "<group>"; };
+		C3324986C40E26F86514B7ACC94E6CBF /* Queue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		CEE42D5986686C2B7BD70198846D80FD /* EventSerializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EventSerializer.swift; sourceTree = "<group>"; };
+		D14A55E9E4A7F3F30628093E352E8781 /* TagWorks */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TagWorks; path = TagWorks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D271FF0163C5AD54BA9C608330CA1E12 /* CommonUtil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CommonUtil.swift; sourceTree = "<group>"; };
+		DAFF8C658664BE73811981B19DB22F88 /* TagWorks.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = TagWorks.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		E0C9EC08D75B50490506D52E49530185 /* Pods-TagWorks_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TagWorks_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		F1C5D50D5EBBE2F650E748CE1A351EFB /* EventSerializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EventSerializer.swift; sourceTree = "<group>"; };
-		F4D2E8814925621B3625F70A1DA4C240 /* TagWorks-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TagWorks-umbrella.h"; sourceTree = "<group>"; };
+		EA9B3A4FFBBEF7FF4954185B783344C5 /* Device.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		F693407A47AFAAC202714F07FB36AF19 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		FC1796F56E23AE15B84380216142DF1B /* DefaultDispatcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DefaultDispatcher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,11 +115,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		55B5478BE3F138206EEB437ADCD26B6A /* Frameworks */ = {
+		C404B375E42016843C286E8B0CF8CC27 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B17C55A85AB5DABF24B2F270EA83443 /* Foundation.framework in Frameworks */,
+				499B942D0A878D038977961AA0932FED /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,29 +150,27 @@
 			path = "Target Support Files/Pods-TagWorks_Tests";
 			sourceTree = "<group>";
 		};
-		461E0C2481363B399C7AD1F862AD34AC /* Support Files */ = {
+		339B34CC6C927BA96C5254E2BE6F0B3C /* Util */ = {
 			isa = PBXGroup;
 			children = (
-				D1ECACC2694641DCD0F3484F64D1D623 /* TagWorks.modulemap */,
-				DFC38DE75AAA357406CC9CE86653DA85 /* TagWorks-dummy.m */,
-				B6CFD7C91D1781678BA44D526181DA6D /* TagWorks-Info.plist */,
-				C960AA05C8FB95F617772731E016F32D /* TagWorks-prefix.pch */,
-				F4D2E8814925621B3625F70A1DA4C240 /* TagWorks-umbrella.h */,
-				146D814C0DBF29284D5B2634CA3C5D21 /* TagWorks.debug.xcconfig */,
-				8B31917408A63A81828DFF7A37445A87 /* TagWorks.release.xcconfig */,
+				D271FF0163C5AD54BA9C608330CA1E12 /* CommonUtil.swift */,
+				FC1796F56E23AE15B84380216142DF1B /* DefaultDispatcher.swift */,
+				1E762CF46655A0FA78F18594F6D6387E /* DefaultLogger.swift */,
+				0F7DBDDAF96EAF7770599EB3E6048D0E /* DefaultQueue.swift */,
+				CEE42D5986686C2B7BD70198846D80FD /* EventSerializer.swift */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/TagWorks";
+			name = Util;
+			path = Sources/TagWorks/Util;
 			sourceTree = "<group>";
 		};
-		540179E43B71FBEBEFB424A0A2500426 /* Data */ = {
+		3FC5B7CE1980130CB8003FC13B3B8C87 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				56E1FE34EE443B6A9917AF9E0A71D7BA /* Application.swift */,
-				BD7D6A9207F5F0EA414E8583D30B6193 /* Device.swift */,
-				DB0A253AB44E7D3712FDC8D89B77F5D0 /* Dimension.swift */,
-				23A65BDA107B5A06A1383124270EF540 /* Event.swift */,
-				29C3BDA41E4F78BC216A782CF61B3FEB /* UserAgent.swift */,
+				7BB689641A6569209429496B5E3D2B14 /* Application.swift */,
+				EA9B3A4FFBBEF7FF4954185B783344C5 /* Device.swift */,
+				3DB2D52D57DD20DD8A742554AA17D88E /* Dimension.swift */,
+				5E8CAE0C36AF8A511635343E3791D4EF /* Event.swift */,
+				7FE75CB3AB793D3BC6E6BC6C5DED54FD /* UserAgent.swift */,
 			);
 			name = Data;
 			path = Sources/TagWorks/Data;
@@ -184,6 +182,31 @@
 				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		77C90A73B4E9FBF3A75656D490C54E6B /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				43D2C5D2320AF76BBC4859A1F881BA4D /* Common.swift */,
+				AB9BEFB1BD9C507076B6A46C9754DB7C /* LogLevel.swift */,
+			);
+			name = Constants;
+			path = Sources/TagWorks/Constants;
+			sourceTree = "<group>";
+		};
+		829E36C9528DF4990A0F0BA22DC2E301 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				766A7AF7F2145892864ADD1075B158C6 /* TagWorks.modulemap */,
+				7BDE64F745985B588577ED3642D8893B /* TagWorks-dummy.m */,
+				1FA5E9AB9E30D373494768B4E5AD0808 /* TagWorks-Info.plist */,
+				3EAC6E86CC424C9A67FE40609E954F97 /* TagWorks-prefix.pch */,
+				8FFFC4C5147B20DBFCF0E9809543BDF9 /* TagWorks-umbrella.h */,
+				2816AC4D306802849D79A2644178151F /* TagWorks.debug.xcconfig */,
+				624E5BC803AD70F06067DC091D136DC3 /* TagWorks.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/TagWorks";
 			sourceTree = "<group>";
 		};
 		961045213B52C7C0EEFB062EFBAA2733 /* Pods-TagWorks_Example */ = {
@@ -206,9 +229,9 @@
 		96542FF442A008F9A7C59F14F6090A11 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C07331F0461C542BCF8D7ADC2A6D7CB8 /* Pods_TagWorks_Example.framework */,
-				83C12C3817C17319431B55C355BC1C88 /* Pods_TagWorks_Tests.framework */,
-				D14A55E9E4A7F3F30628093E352E8781 /* TagWorks.framework */,
+				C07331F0461C542BCF8D7ADC2A6D7CB8 /* Pods-TagWorks_Example */,
+				83C12C3817C17319431B55C355BC1C88 /* Pods-TagWorks_Tests */,
+				D14A55E9E4A7F3F30628093E352E8781 /* TagWorks */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -216,7 +239,7 @@
 		96904A2386A51D38A7FF8216AC2A7FC9 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				BC46962EEF7C8395EEA77A904114135A /* TagWorks */,
+				F2275E12AB6A60CE2D3CC21A9525986C /* TagWorks */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -230,55 +253,6 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		AE4E5ED1A51B5FA4CFB467776F0A065F /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				5D65BD80EBC8694EF21767D813516321 /* LICENSE */,
-				5BBE475F61B298C20B15011069F00C9F /* README.md */,
-				DF7D6E2C7D5B10F95CD5D1EE96E7DFAB /* TagWorks.podspec */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		B1AFC6324E825A23A14417A6398AEBEC /* Util */ = {
-			isa = PBXGroup;
-			children = (
-				915F7C44C38D18310160BA2FC651A79C /* CommonUtil.swift */,
-				92F7D03C0800B2E4BCC113BE34949A2A /* DefaultDispatcher.swift */,
-				1ED47A50BC870FEB43357CBF06528F83 /* DefaultQueue.swift */,
-				F1C5D50D5EBBE2F650E748CE1A351EFB /* EventSerializer.swift */,
-				980A9E2A2A79EB0800E1EDA7 /* DefaultLogger.swift */,
-			);
-			name = Util;
-			path = Sources/TagWorks/Util;
-			sourceTree = "<group>";
-		};
-		BC46962EEF7C8395EEA77A904114135A /* TagWorks */ = {
-			isa = PBXGroup;
-			children = (
-				A8E749F2105812ED8178A4DA6DE24B09 /* TagWorks.swift */,
-				079CBF52132A5403F0C9444FE71B889C /* TagWorksBase.swift */,
-				C00F2CF59A6A6F724B55CC83B87FE694 /* Constants */,
-				540179E43B71FBEBEFB424A0A2500426 /* Data */,
-				D0C94924E67133071EF2585A51A9F296 /* Interface */,
-				AE4E5ED1A51B5FA4CFB467776F0A065F /* Pod */,
-				461E0C2481363B399C7AD1F862AD34AC /* Support Files */,
-				B1AFC6324E825A23A14417A6398AEBEC /* Util */,
-			);
-			name = TagWorks;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		C00F2CF59A6A6F724B55CC83B87FE694 /* Constants */ = {
-			isa = PBXGroup;
-			children = (
-				67292B4BC05AC08622E1DBCFA5D1C7A8 /* Common.swift */,
-				980A9E2C2A79EB3F00E1EDA7 /* LogLevel.swift */,
-			);
-			name = Constants;
-			path = Sources/TagWorks/Constants;
-			sourceTree = "<group>";
-		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
@@ -290,18 +264,6 @@
 			);
 			sourceTree = "<group>";
 		};
-		D0C94924E67133071EF2585A51A9F296 /* Interface */ = {
-			isa = PBXGroup;
-			children = (
-				980A9E282A79EADF00E1EDA7 /* Logger.swift */,
-				6AC4F03BB6C23E0EAAFD9DFE67F7FB1A /* Dispatcher.swift */,
-				D07C1A3DE4F33F1424402D803906773A /* Queue.swift */,
-				581C8C70A3E311D7C09514F37C8C7603 /* Serializer.swift */,
-			);
-			name = Interface;
-			path = Sources/TagWorks/Interface;
-			sourceTree = "<group>";
-		};
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -310,22 +272,60 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D56BF2679A994183BDC5F9593E37FAA3 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				3C7100634A60BFF854D8A580765B2EB1 /* Dispatcher.swift */,
+				66C9161DAAFC0143467E45EE8C615073 /* Logger.swift */,
+				C3324986C40E26F86514B7ACC94E6CBF /* Queue.swift */,
+				C0E299A6343C75E6DC9CF8A72DE69683 /* Serializer.swift */,
+			);
+			name = Interface;
+			path = Sources/TagWorks/Interface;
+			sourceTree = "<group>";
+		};
+		E2976D8074AC19E6F2899A3647C0EEC0 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				6FA7C8060DEB9A450F84A2AC18350693 /* LICENSE */,
+				F693407A47AFAAC202714F07FB36AF19 /* README.md */,
+				DAFF8C658664BE73811981B19DB22F88 /* TagWorks.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		F2275E12AB6A60CE2D3CC21A9525986C /* TagWorks */ = {
+			isa = PBXGroup;
+			children = (
+				A252AE1875C67719FF28BCD88E01D2A3 /* TagWorks.swift */,
+				772AE388EF216B7487E0D37EE52995AA /* TagWorksBase.swift */,
+				77C90A73B4E9FBF3A75656D490C54E6B /* Constants */,
+				3FC5B7CE1980130CB8003FC13B3B8C87 /* Data */,
+				D56BF2679A994183BDC5F9593E37FAA3 /* Interface */,
+				E2976D8074AC19E6F2899A3647C0EEC0 /* Pod */,
+				829E36C9528DF4990A0F0BA22DC2E301 /* Support Files */,
+				339B34CC6C927BA96C5254E2BE6F0B3C /* Util */,
+			);
+			name = TagWorks;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		14BA2AE6A42CE56DF5E2310F0CCA11F8 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C311699350EB1AE0E7A5E5F9C3596730 /* TagWorks-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		1F18160D52923EFA9AADBD65150CF618 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				6D4A9F1A88BE3A8A0931527D3FEE798F /* Pods-TagWorks_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EBDBCC67ADCF3EE8F53E39E8FA98F07 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B4DB6E2D25CD744EFE82B12BC0366B7 /* TagWorks-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,12 +342,12 @@
 /* Begin PBXNativeTarget section */
 		300804565E669E6E3A02A112C6AF6919 /* TagWorks */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F2D23A75483F9056EECF55CDAE9656A4 /* Build configuration list for PBXNativeTarget "TagWorks" */;
+			buildConfigurationList = F602533C041BCF1D75B506B57021E221 /* Build configuration list for PBXNativeTarget "TagWorks" */;
 			buildPhases = (
-				14BA2AE6A42CE56DF5E2310F0CCA11F8 /* Headers */,
-				598AAC740EE55D937B66645D9DE578D8 /* Sources */,
-				55B5478BE3F138206EEB437ADCD26B6A /* Frameworks */,
-				956209D86A0AC91618979193B8E34940 /* Resources */,
+				7EBDBCC67ADCF3EE8F53E39E8FA98F07 /* Headers */,
+				3658EEA4E65DB31B5E042811EDACA5A8 /* Sources */,
+				C404B375E42016843C286E8B0CF8CC27 /* Frameworks */,
+				F45772EEA80E0DAF1C540B2FE94B2135 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -355,7 +355,7 @@
 			);
 			name = TagWorks;
 			productName = TagWorks;
-			productReference = D14A55E9E4A7F3F30628093E352E8781 /* TagWorks.framework */;
+			productReference = D14A55E9E4A7F3F30628093E352E8781 /* TagWorks */;
 			productType = "com.apple.product-type.framework";
 		};
 		3305B76E30387FD7A354CE89EF095C66 /* Pods-TagWorks_Example */ = {
@@ -370,11 +370,11 @@
 			buildRules = (
 			);
 			dependencies = (
-				166C8B7B420ABBA35A20D061A39B37BC /* PBXTargetDependency */,
+				C06D15CC5656945EB29102DDFCD75803 /* PBXTargetDependency */,
 			);
 			name = "Pods-TagWorks_Example";
 			productName = Pods_TagWorks_Example;
-			productReference = C07331F0461C542BCF8D7ADC2A6D7CB8 /* Pods_TagWorks_Example.framework */;
+			productReference = C07331F0461C542BCF8D7ADC2A6D7CB8 /* Pods-TagWorks_Example */;
 			productType = "com.apple.product-type.framework";
 		};
 		A64B5094369C42F05D62F444DF1AB98D /* Pods-TagWorks_Tests */ = {
@@ -389,11 +389,11 @@
 			buildRules = (
 			);
 			dependencies = (
-				BDAC69ABA6CD445E600D40F6C1F71220 /* PBXTargetDependency */,
+				7388B702F6DF4E962A51725CF9326ACE /* PBXTargetDependency */,
 			);
 			name = "Pods-TagWorks_Tests";
 			productName = Pods_TagWorks_Tests;
-			productReference = 83C12C3817C17319431B55C355BC1C88 /* Pods_TagWorks_Tests.framework */;
+			productReference = 83C12C3817C17319431B55C355BC1C88 /* Pods-TagWorks_Tests */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -402,9 +402,8 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1300;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1300;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 11.4";
@@ -427,14 +426,14 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		956209D86A0AC91618979193B8E34940 /* Resources */ = {
+		EBC17E175B911674F4D7CAA0E8D5978D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EBC17E175B911674F4D7CAA0E8D5978D /* Resources */ = {
+		F45772EEA80E0DAF1C540B2FE94B2135 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -451,29 +450,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		598AAC740EE55D937B66645D9DE578D8 /* Sources */ = {
+		3658EEA4E65DB31B5E042811EDACA5A8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				980A9E292A79EADF00E1EDA7 /* Logger.swift in Sources */,
-				25175B98D3EB614574AAA0FB46CAE131 /* Application.swift in Sources */,
-				CE11127FFBF7C340E99D238477FBEA85 /* CommonUtil.swift in Sources */,
-				96AB9B116CC21506D714E7E10B7B4067 /* DefaultDispatcher.swift in Sources */,
-				980A9E2D2A79EB3F00E1EDA7 /* LogLevel.swift in Sources */,
-				405DF2EE59738D6ADF00D209250E63F8 /* DefaultQueue.swift in Sources */,
-				DBE425FA09E2AD947B7843CB5BD541C9 /* Device.swift in Sources */,
-				233612F8E6813307083F175E4E9F0C7D /* Dimension.swift in Sources */,
-				FCA593D4235B8296D48045C5706BD832 /* Dispatcher.swift in Sources */,
-				3977CC5A9DB500C28BE6A0D4B7EB1813 /* Event.swift in Sources */,
-				672C6D05985D0B51EED4CC7AC7FBA586 /* EventSerializer.swift in Sources */,
-				9321A8D8FAC5DD6C1129D00F0EE8669D /* Queue.swift in Sources */,
-				E50C67F1519EACF1572D88C4C7371135 /* Serializer.swift in Sources */,
-				F8F1120F7DB56E820279C3F9BF9A2A4E /* TagWorks.swift in Sources */,
-				980A9E2B2A79EB0800E1EDA7 /* DefaultLogger.swift in Sources */,
-				89039C20927CE9DD1849EC61747D8BC7 /* TagWorks-dummy.m in Sources */,
-				2BE2B4578E2DC8F74CD5C56019FE8645 /* TagWorksBase.swift in Sources */,
-				C65503B803A5AAE25CD124596BCD08ED /* Common.swift in Sources */,
-				7767B01CA4BF974F130FA8A2437FE65D /* UserAgent.swift in Sources */,
+				337B14F2E23E244AEBCB2AD53F54CD8F /* Application.swift in Sources */,
+				FEFD14D4E3EDE3E92877DECA9BDF385A /* Common.swift in Sources */,
+				045EFFB2966D4735A022F66AF76992B3 /* CommonUtil.swift in Sources */,
+				83760FC429D8966C032075D947A70C6D /* DefaultDispatcher.swift in Sources */,
+				CEE5C6BED0614A171FC8C36CD996232A /* DefaultLogger.swift in Sources */,
+				7082ED1CDB4A84B4C2642C48739B16F6 /* DefaultQueue.swift in Sources */,
+				A1846848E7E35E5C9950F4CE88CAF49F /* Device.swift in Sources */,
+				F674B5C5F76BA02D49C074EAB7A8FE5D /* Dimension.swift in Sources */,
+				110EC950A28DD3AB7AFAA5662018751A /* Dispatcher.swift in Sources */,
+				3B90401591FD5EC658BE63C14204EFA2 /* Event.swift in Sources */,
+				87601ED81320EECF1D0C93F96F67825A /* EventSerializer.swift in Sources */,
+				61808D790DD73034544FB50BA210FE3F /* Logger.swift in Sources */,
+				65DC25CA366F71A14DC563B529CC6CF5 /* LogLevel.swift in Sources */,
+				39CCAFDFCA6AD5148EC41C004E325548 /* Queue.swift in Sources */,
+				FA66AF2CD209CBB3B02EF65647B5CC24 /* Serializer.swift in Sources */,
+				8C663D4DCDE4C9DC355438C22229179F /* TagWorks.swift in Sources */,
+				4364B1ACB172FA3691E667946B4669E8 /* TagWorks-dummy.m in Sources */,
+				629447CCE72BD9FC8596FB3DB6B4194B /* TagWorksBase.swift in Sources */,
+				2DE7D4C7BBFE73E1AD45650D184143E7 /* UserAgent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,17 +495,17 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		166C8B7B420ABBA35A20D061A39B37BC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = TagWorks;
-			target = 300804565E669E6E3A02A112C6AF6919 /* TagWorks */;
-			targetProxy = BAC74574F38C98FC33576A5F86DE6EE7 /* PBXContainerItemProxy */;
-		};
-		BDAC69ABA6CD445E600D40F6C1F71220 /* PBXTargetDependency */ = {
+		7388B702F6DF4E962A51725CF9326ACE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-TagWorks_Example";
 			target = 3305B76E30387FD7A354CE89EF095C66 /* Pods-TagWorks_Example */;
-			targetProxy = 8CDB82E52777B22F9713FF4D133A4378 /* PBXContainerItemProxy */;
+			targetProxy = B52D2D882B45E3005692241FD662BF65 /* PBXContainerItemProxy */;
+		};
+		C06D15CC5656945EB29102DDFCD75803 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TagWorks;
+			target = 300804565E669E6E3A02A112C6AF6919 /* TagWorks */;
+			targetProxy = 48288DEF3F2F5025592AC1C57F8F7241 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -517,16 +516,17 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-TagWorks_Example/Pods-TagWorks_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -534,8 +534,6 @@
 				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-TagWorks_Example/Pods-TagWorks_Example.modulemap";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -556,16 +554,17 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-TagWorks_Tests/Pods-TagWorks_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -573,8 +572,6 @@
 				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-TagWorks_Tests/Pods-TagWorks_Tests.modulemap";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -588,20 +585,21 @@
 			};
 			name = Debug;
 		};
-		70952EBC64E1D8248C6C133FDAC5CC87 /* Release */ = {
+		5900AE29F2852305B15738F5B5400449 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8B021B8D9CB2C35937EBE35665A8C3B7 /* Pods-TagWorks_Tests.release.xcconfig */;
+			baseConfigurationReference = 2816AC4D306802849D79A2644178151F /* TagWorks.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-TagWorks_Tests/Pods-TagWorks_Tests-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/TagWorks/TagWorks-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TagWorks/TagWorks-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -609,10 +607,79 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MODULEMAP_FILE = "Target Support Files/TagWorks/TagWorks.modulemap";
+				PRODUCT_MODULE_NAME = TagWorks;
+				PRODUCT_NAME = TagWorks;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6D0DF2F156435CA5AEBB818B16E932D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 624E5BC803AD70F06067DC091D136DC3 /* TagWorks.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TagWorks/TagWorks-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TagWorks/TagWorks-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TagWorks/TagWorks.modulemap";
+				PRODUCT_MODULE_NAME = TagWorks;
+				PRODUCT_NAME = TagWorks;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		70952EBC64E1D8248C6C133FDAC5CC87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B021B8D9CB2C35937EBE35665A8C3B7 /* Pods-TagWorks_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TagWorks_Tests/Pods-TagWorks_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-TagWorks_Tests/Pods-TagWorks_Tests.modulemap";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -662,7 +729,6 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -678,51 +744,15 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		89F84AC21A7D8065C0CE0952AD4941C3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8B31917408A63A81828DFF7A37445A87 /* TagWorks.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/TagWorks/TagWorks-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TagWorks/TagWorks-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/TagWorks/TagWorks.modulemap";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
-				PRODUCT_MODULE_NAME = TagWorks;
-				PRODUCT_NAME = TagWorks;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -761,7 +791,6 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -780,11 +809,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -798,16 +828,17 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-TagWorks_Example/Pods-TagWorks_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -815,8 +846,6 @@
 				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-TagWorks_Example/Pods-TagWorks_Example.modulemap";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -824,42 +853,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		FFB051BAB1B68B88E56A87F940D77661 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 146D814C0DBF29284D5B2634CA3C5D21 /* TagWorks.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/TagWorks/TagWorks-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TagWorks/TagWorks-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/TagWorks/TagWorks.modulemap";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
-				PRODUCT_MODULE_NAME = TagWorks;
-				PRODUCT_NAME = TagWorks;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -896,11 +889,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F2D23A75483F9056EECF55CDAE9656A4 /* Build configuration list for PBXNativeTarget "TagWorks" */ = {
+		F602533C041BCF1D75B506B57021E221 /* Build configuration list for PBXNativeTarget "TagWorks" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FFB051BAB1B68B88E56A87F940D77661 /* Debug */,
-				89F84AC21A7D8065C0CE0952AD4941C3 /* Release */,
+				5900AE29F2852305B15738F5B5400449 /* Debug */,
+				6D0DF2F156435CA5AEBB818B16E932D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

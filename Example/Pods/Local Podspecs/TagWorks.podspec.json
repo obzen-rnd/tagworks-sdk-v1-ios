@@ -1,22 +1,24 @@
 {
   "name": "TagWorks",
-  "version": "0.1.0",
-  "summary": "A short description of TagWorks.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/yeongjinhan/tagworks-sdk-ios",
+  "version": "1.0.1",
+  "summary": "TagWorks SDK for iOS",
+  "swift_versions": "5.0",
+  "description": "Obzen TagWorks Mobile SDK for iOS",
+  "homepage": "https://support.obzen.com/Obzen/TagWorks-SDK-iOS",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "68175154": "hanyj96@naver.com"
+    "obzen": "hanyj96@obzen.com"
   },
   "source": {
-    "git": "https://github.com/yeongjinhan/tagworks-sdk-ios.git",
-    "tag": "0.1.0"
+    "git": "https://support.obzen.com/Obzen/TagWorks-SDK-iOS.git",
+    "tag": "1.0.1"
   },
   "platforms": {
-    "ios": "10.0"
+    "ios": "12.0"
   },
-  "source_files": "Sources/TagWorks/**/*"
+  "source_files": "Sources/TagWorks/**/*",
+  "swift_version": "5.0"
 }

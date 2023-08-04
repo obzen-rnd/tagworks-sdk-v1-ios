@@ -9,7 +9,7 @@ import Foundation
 /// TagWorks 클래스는 SDK 모듈내에서 가장 최상위에 존재하는 클래스입니다.
 final public class TagWorks: NSObject {
     
-    // MARK: - 1. 클래스 변수
+    // MARK: - 클래스 변수
     
     /// Logger 객체입니다.
     @objc public var logger: Logger = DefaultLogger(minLevel: .warning)
@@ -107,7 +107,7 @@ final public class TagWorks: NSObject {
     /// 현재 이벤트 로그 발송중 여부입니다.
     private(set) var isDispatching = false
     
-    // MARK: - 2. 클래스 함수
+    // MARK: - 클래스 함수
     
     /// TagWorks 클래스의 기본 생성자 입니다.
     /// - Parameters:
@@ -222,7 +222,7 @@ final public class TagWorks: NSObject {
     }
 }
 
-// MARK: - 3. 공용 디멘전
+// MARK: - 공용 디멘전
 
 extension TagWorks {
     
@@ -252,7 +252,7 @@ extension TagWorks {
     }
 }
 
-// MARK: - 4. 수집 이벤트
+// MARK: - 수집 이벤트
 
 extension TagWorks {
     

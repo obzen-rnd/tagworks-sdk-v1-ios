@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TagWorks'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'TagWorks SDK for iOS'
   s.swift_version    = '5.0'
 
@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   s.author           = { 'obzen' => 'hanyj96@obzen.com' }
   s.source           = { :git => 'https://support.obzen.com/Obzen/TagWorks-SDK-iOS.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '12.0'
 
   s.source_files = 'Sources/TagWorks/**/*'
 
