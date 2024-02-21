@@ -25,8 +25,8 @@ final class EventSerializer: Serializer {
         let eventsAsQueryItems: [[String: String]] = events.map { self.queryItems(for: $0) }
         let serializedEvents = eventsAsQueryItems.map { items in
             items.map {
-                "\($0.key)=\($0.value)"
-            }.joined(separator: "&")
+                "\($0.key)≡\($0.value)"
+            }.joined(separator: "∞")
         }
         let body = ["requests": serializedEvents.map({ "?\($0)" })]
         return try JSONSerialization.data(withJSONObject: body, options: [])
@@ -58,8 +58,8 @@ fileprivate extension Event {
             $0[$1.name] = $1.value
         }
         return serializedEvents.map{
-            "\($0.key)=\($0.value)"
-        }.joined(separator: "&")
+            "\($0.key)≡\($0.value)"
+        }.joined(separator: "∞")
     }
     
     /// URLQuery 파라미터를 저장하는 컬렉션입니다.
