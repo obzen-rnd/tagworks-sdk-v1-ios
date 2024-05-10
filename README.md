@@ -20,7 +20,7 @@ pod 'TagWorks'
 
 ## Author
 
-hanyj96@obzen.com
+obzen-rnd@obzen.com
 
 ## License
 

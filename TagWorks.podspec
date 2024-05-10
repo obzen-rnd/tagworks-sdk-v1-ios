@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = 'Obzen TagWorks Mobile SDK for iOS'
-  s.homepage         = 'https://support.obzen.com/Obzen/TagWorks-SDK-iOS'
+  s.homepage         = 'https://obzen.com'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'obzen' => 'obzen-rnd@obzen.com' }
   s.source           = { :git => 'https://github.com/obzen-rnd/tagworks-sdk-v1-ios.git', :tag => s.version.to_s }
