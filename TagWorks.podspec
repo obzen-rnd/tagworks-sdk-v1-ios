@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TagWorks'
-  s.version          = '1.0.1'
+  s.version          = '1.0.3'
   s.summary          = 'TagWorks SDK for iOS'
   s.swift_version    = '5.0'
 
@@ -21,8 +21,8 @@ Pod::Spec.new do |s|
   s.description      = 'Obzen TagWorks Mobile SDK for iOS'
   s.homepage         = 'https://support.obzen.com/Obzen/TagWorks-SDK-iOS'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'obzen' => 'hanyj96@obzen.com' }
-  s.source           = { :git => 'https://support.obzen.com/Obzen/TagWorks-SDK-iOS.git', :tag => s.version.to_s }
+  s.author           = { 'obzen' => 'obzen-rnd@obzen.com' }
+  s.source           = { :git => 'https://github.com/obzen-rnd/tagworks-sdk-v1-ios.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '12.0'
 
