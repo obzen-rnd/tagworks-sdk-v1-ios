@@ -25,8 +25,8 @@ final class EventSerializer: Serializer {
         let eventsAsQueryItems: [[String: String]] = events.map { self.queryItems(for: $0) }
         let serializedEvents = eventsAsQueryItems.map { items in
             items.map {
-                "\($0.key)≡\($0.value)"
-            }.joined(separator: "∞")
+                "\($0.key)=\($0.value)"
+            }.joined(separator: "&")
         }
         let body = ["requests": serializedEvents.map({ "?\($0)" })]
         return try JSONSerialization.data(withJSONObject: body, options: [])
@@ -41,6 +41,10 @@ fileprivate extension Event {
         var eventCommonItems: [URLQueryItem] = []
         eventCommonItems.append(URLQueryItem(name: EventParams.clientDateTime, value: CommonUtil.Formatter.iso8601DateFormatter.string(from: clientDateTime)))
         eventCommonItems.append(URLQueryItem(name: EventParams.triggerType, value: eventType))
+
+        if visitorId != nil {
+            eventCommonItems.append(URLQueryItem(name: EventParams.visitorId, value: visitorId))
+        }
         if pageTitle != nil {
             eventCommonItems.append(URLQueryItem(name: EventParams.pageTitle, value: pageTitle))
         }
@@ -50,6 +54,9 @@ fileprivate extension Event {
         if customUserPath != nil {
             eventCommonItems.append(URLQueryItem(name: EventParams.customUserPath, value: customUserPath))
         }
+
+        eventCommonItems.append(URLQueryItem(name: EventParams.deviceType, value: "app"))
+
         let customDimensionItems = dimensions.map {
             URLQueryItem(name: EventParams.customDimension + "\($0.index)", value: $0.value)
         }
@@ -67,11 +74,11 @@ fileprivate extension Event {
         get {
             return [
                 URLQueryItem(name: URLQueryParams.siteId, value: siteId),
-                URLQueryItem(name: URLQueryParams.visitorId, value: visitorId),
+                // URLQueryItem(name: URLQueryParams.visitorId, value: visitorId),
                 URLQueryItem(name: URLQueryParams.userId, value: userId),
                 URLQueryItem(name: URLQueryParams.url, value: url?.absoluteString),
                 URLQueryItem(name: URLQueryParams.urlReferer, value: urlReferer?.absoluteString),
-                URLQueryItem(name: URLQueryParams.language, value: language),
+                URLQueryItem(name: URLQueryParams.language, value: language.addingPercentEncoding(withAllowedCharacters: .alphanumerics)),
                 URLQueryItem(name: URLQueryParams.clientDateTime, value: CommonUtil.Formatter.iso8601DateFormatter.string(from: clientDateTime)),
                 URLQueryItem(name: URLQueryParams.screenSize, value: String(format: "%1.0fx%1.0f", screenResolution.width, screenResolution.height)),
                 URLQueryItem(name: URLQueryParams.event, value: serializeEventString())

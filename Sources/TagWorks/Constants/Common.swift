@@ -42,7 +42,7 @@ extension Event {
     /// 이벤트 로그 http request 에 지정되는 파라미터를 열거합니다.
     internal struct URLQueryParams {
         static let siteId = "idsite"
-        static let visitorId = "_id"
+        static let visitorId = "ozvid"
         static let userId = "uid"
         static let language = "lang"
         static let url = "url"
@@ -61,5 +61,6 @@ extension Event {
         static let searchKeyword = "obz_search_keyword"
         static let customDimension = "cstm_d"
         static let pageTitle = "epgtl_nm"
+        static let deviceType = "obz_dvc_type"
     }
 }
