@@ -1,5 +1,5 @@
 PODS:
-  - TagWorks (1.0.1)
+  - TagWorks (1.0.6)
 
 DEPENDENCIES:
   - TagWorks (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  TagWorks: f75072409d4449ab3762bf1243138c6e7f9c6420
+  TagWorks: 40cecaf16c951ae3e019384c324191cdf79162b1
 
-PODFILE CHECKSUM: 31c520484e1fe7d1a41a8a73179aa6d6d5a6a649
+PODFILE CHECKSUM: ddc80d1b99c0aaf2db2b2b915ebc392019f430e3
 
 COCOAPODS: 1.11.3
