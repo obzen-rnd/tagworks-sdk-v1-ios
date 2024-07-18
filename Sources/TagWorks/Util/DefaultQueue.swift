@@ -32,6 +32,10 @@ public final class DefaultQueue: NSObject, Queue {
     ///   - completion: 완료 CallBack
     public func remove(events: [Event], completion: @escaping () -> Void) {
         items = items.filter( {event in !events.contains(where: { target in target.uuid == event.uuid })})
+        if completion != nil {
+            completion()
+        }
+        print(items)
     }
     
     /// queue에서 이벤트 구조체를 반환합니다.

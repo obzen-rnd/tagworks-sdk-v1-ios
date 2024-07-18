@@ -7,6 +7,12 @@
 
 import Foundation
 
+func print(_ items: Any...) {
+    #if DEBUG
+        Swift.print(items[0])
+    #endif
+}
+
 /// TagWorks Logger 의 로그 레벨을 열거합니다.
 @objc public enum LogLevel: Int {
     case verbose = 10

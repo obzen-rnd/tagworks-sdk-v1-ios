@@ -27,11 +27,13 @@ final public class TagWorks: NSObject {
     private let dispatcher: Dispatcher
     
     /// 수집대상이 되는 컨테이너 식별자를 지정합니다.
+    /// - 해당 사이트(고객사) 별로 수동으로 발급되는 식별자입니다. 차후 API를 통해 자동발급 되어야 할 필요가 있음. (사이트에서 전달받음)
     /// - Requires: TagManager 에서 발급된 컨테이너 ID를 입력합니다.
     /// - Important: siteId는 "[0-9],[0-9a-zA-Z]" 와 같은 형식을 가집니다.
     internal let siteId: String
     
     /// 수집되는 사용자의 방문자 식별자입니다.
+    /// - 해당 디바이스의 고유 식별자입니다. (UUID를 사용하나 바뀌지 않는것이 좋음)
     @objc public var visitorId: String {
         get {
             return currentVisitorId()
@@ -57,6 +59,7 @@ final public class TagWorks: NSObject {
     }
     
     /// 수집되는 사용자의 유저 식별자 (고객 식별자)입니다.
+    ///  - 로그인되어 사용하는 사용자의 유저 식별자입니다. (사이트에서 전달받음)
     @objc public var userId: String? {
         get {
             return tagWorksBase.userId
@@ -114,7 +117,7 @@ final public class TagWorks: NSObject {
     ///   - siteId: 수집 대상이 되는 컨테이너 식별자
     ///   - queue: 수집 로그 발송 대기 보관 컬렉션
     ///   - dispatcher: 수집 로그 발송 객체
-    required public init(siteId: String, queue: Queue, dispatcher: Dispatcher) {
+    required public init(siteId: String, queue: DefaultQueue, dispatcher: Dispatcher) {
         self.siteId = siteId
         self.queue = queue
         self.dispatcher = dispatcher
@@ -148,6 +151,7 @@ final public class TagWorks: NSObject {
         guard !isOptedOut else { return }
         logger.verbose("Queued event: \(event)")
         queue.enqueue(event: event)
+        print(queue.size)
     }
     
     /// 현재 Queue에 저장되어 있는 이벤트 구조체를 강제로 발송합니다.
@@ -168,6 +172,7 @@ final public class TagWorks: NSObject {
     
     /// 현재 Queue에 저장되어 있는 이벤트 로그를 발송합니다.
     private func dispatchBatch() {
+        print("dispatchBatch")
         guard Thread.isMainThread else {
             DispatchQueue.main.sync {
                 self.dispatchBatch()
@@ -177,6 +182,7 @@ final public class TagWorks: NSObject {
         queue.first(limit: numberOfEventsDispatchedAtOnce) { [weak self] events in
             guard let self = self else { return }
             guard events.count > 0 else {
+                print("events count zero!!")
                 self.isDispatching = false
                 self.startDispatchTimer()
                 self.logger.info("Finished dispatching events")
@@ -185,6 +191,7 @@ final public class TagWorks: NSObject {
             self.dispatcher.send(events: events, success: { [weak self] in
                 guard let self = self else { return }
                 DispatchQueue.main.async {
+                    print("send - \(events)")
                     self.queue.remove(events: events, completion: {
                         self.logger.info("Dispatched batch of \(events.count) events.")
                         DispatchQueue.main.async {
@@ -217,7 +224,11 @@ final public class TagWorks: NSObject {
         
         DispatchQueue.main.async { [weak self] in
             guard let self = self else { return }
-            self.dispatchTimer = Timer.scheduledTimer(timeInterval: self.dispatchInterval, target: self, selector: #selector(self.dispatch), userInfo: nil, repeats: false)
+            self.dispatchTimer = Timer.scheduledTimer(timeInterval: self.dispatchInterval, 
+                                                      target: self,
+                                                      selector: #selector(self.dispatch), 
+                                                      userInfo: nil,
+                                                      repeats: false)
         }
     }
 }
